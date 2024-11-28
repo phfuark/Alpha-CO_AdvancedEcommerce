@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+    <link rel="stylesheet" href="./styles2.css">
+
+    <script src="./scripts/cart.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav">
+                <a href="./index.html">
+                    <img src="./imagens/logo_alpha-.png" class="logo" alt="Logo">
+                </a>
+                <div class="nav-items">
+                    <div class="search">
+                        <input type="text" class="search-box" placeholder="Buscar produto">
+                        <button class="search-btn">Buscar</button>
+                    </div>
+                    <a href="#"><img src="./imagens/perfil.png" alt="Perfil"></a>
+                    <a href="./cart.html"><img src="./imagens/carinho.png" alt="Carrinho"></a>
+                </div>
+            </div>
+        </nav>
+        <ul class="links-container">
+            <li class="link-item"><a href="./index.html" class="link">Início</a></li>
+            <li class="link-item"><a href="./products.html" class="link">Feminino</a></li>
+            <li class="link-item"><a href="./products.html" class="link">Masculino</a></li>
+            <li class="link-item"><a href="./products.html" class="link">Acessórios</a></li>
+            <li class="link-item"><a href="./index.html" class="link">Sobre Nós</a></li>
+        </ul>
+    </header>
+
+    <div class="product-container" id="product-container">
+        <!-- Detalhes do produto serão inseridos aqui -->
+    </div>
+    
+
+    <footer class="fixarRodape">
+        <div class="footer-content">
+            <div>
+                <h4>Sobre Nós</h4>
+                <p>Somos uma empresa comprometida em oferecer os melhores produtos com foco na satisfação do cliente.</p>
+            </div>
+            <div class="payments">
+                <h4>Métodos de Pagamento</h4>
+                <div class="payments-icon">
+                    <i class="fab fa-cc-visa" style="font-size: 30px; margin-right: 10px;"></i>
+                    <i class="fab fa-cc-mastercard" style="font-size: 30px;"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./scripts/database.js"></script>  <!-- Este arquivo contém o banco de dados de produtos -->
+    <!-- <script src="./scripts/main.js"></script>      Este arquivo mantém suas funcionalidades gerais -->
+    <script src="./scripts/product.js"></script>   <!-- Este arquivo vai injetar os dados do produto -->
+
+    <script>
+        // Adiciona evento de clique aos botões
+        document.querySelectorAll(".view-product").forEach(button => {
+            button.addEventListener("click", function () {
+                const productId = this.getAttribute("data-id");
+                window.location.href = `product.html?id=${productId}`;
+            });
+        });
+    </script>
+    
+</body>
+</html>

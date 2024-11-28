@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+  <html lang="pt-br">
+    <!-- Referencias de fonte, icones -->
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+      <link rel="shortcut icon" type="imagex/png" href="images/Icon - Sneakers.png">
+      <link rel="stylesheet" href="styles/styles.css">
+      <script type="module" src="scripts/products.js" defer></script>
+      <title>Strider | Products</title>
+    </head>
+    <!-- Inicio do body -->
+    <body>
+    <!-- Inicio do Header -->
+        <header id="header">
+            <div class="blue_header">
+                <p>All products are on sale!!!</p>
+            </div>
+            <div class="info_bar">
+                <div class="header_logo_container">
+                        <span id="logo_stride">Stride</span>
+                        <span id="logo_sneakers">Sneakers</span>
+                </div>
+                    <nav class="container">
+                        <ul class="menus">
+                            <a id="menus_urls" href="index.html">Home</a>
+                            <a id="menus_urls" href="#best_sellers">Best Sellers</a>
+                            <a id="menus_urls" href="#promotions">Promotions</a>
+                            <a id="menus_urls" href="about_us.html">About us</a>
+                            <a id="menus_urls" href="products.html">All products</a>
+                            <a id="menus_urls" href="adm.html">Adm</a>
+                        </ul>
+                    </nav>
+            </div>
+    <!-- Fim do header -->
+    
+    <!-- Inicio das abas de pesquisa,carrinho,etc -->
+            <div class="main_header">
+                <div class="container">
+                    <div class="icon_list">
+                        <i class="bi bi-list"></i>
+                    </div>
+                    <div class="header_search_bar">
+                        <i class="bi bi-search"></i>
+                        <input type="text" name="search" id="input_search" placeholder="What are you looking for?">
+                    </div>
+    
+                    <div class="header_icons">
+                      <a href="login.html">
+                        <i class="bi bi-person"></i>
+                      </a>
+                      <a href="checkout.html">
+                        <i class="bi bi-bag"></i>
+                      </a>
+                      <a href="contact_us.html">
+                        <i class="bi bi-chat-square-dots"></i>
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+      <!-- Componente Grid de Produtos -->
+        <!-- AREA RESERVADA PARA INSERCAO DOS CARDS DE PRODUTOS - NAO EXCLUIR -->
+
+        <main>
+              <h2 id="title_ours_products">Ours products</h2>
+
+              <div class="options">
+
+                  <span class="icon-item">
+                      Share <i class="fas fa-share"></i>
+                  </span>
+  
+                  <span class="icon-item">
+                      Filter By <i class="fas fa-filter"></i>
+                  </span>
+  
+                  <span class="icon-item">
+                      Sort By <i class="fas fa-sort"></i>
+                  </span>
+              </div>
+        </main> 
+         
+      <main>
+        <div id="products_section">
+
+          <div class="filters">
+              <h3>Filters</h3>
+              <h4>Size</h4>
+
+                  <div>
+                    <ul class="size_list">
+                      <li><div class="size_box">32</div></li>
+                      <li><div class="size_box">33</div></li>
+                      <li><div class="size_box">34</div></li>
+                      <li><div class="size_box">35</div></li>
+                      <li><div class="size_box">36</div></li>
+                      <li><div class="size_box">37</div></li>
+                      <li><div class="size_box">38</div></li>
+                      <li><div class="size_box">39</div></li>
+                      <li><div class="size_box">40</div></li>
+                      <li><div class="size_box">41</div></li>
+                      <li><div class="size_box">42</div></li>
+                      <li><div class="size_box">43</div></li>
+                    </ul>
+                  </div>
+
+                <div class="filter_category">
+                    <h4>Gender</h4>
+                    <ul>
+                        <li><input type="checkbox"> Masc</li>
+                        <li><input type="checkbox"> Fem</li>
+                        <li><input type="checkbox"> Unissex</li>
+                    </ul>
+                </div>
+
+                <div class="filter_category">
+                    <h4>Style</h4>
+                    <ul>
+                        <li><input type="checkbox"> Casual</li>
+                        <li><input type="checkbox"> Sports</li>
+                        <li><input type="checkbox"> Classic</li>
+                    </ul>
+                </div>
+
+                <div class="filter_category">
+                    <h4>Mark</h4>
+                    <ul>
+                        <li><input type="checkbox"> Adidas</li>
+                        <li><input type="checkbox"> Louis Vitton</li>
+                        <li><input type="checkbox"> New Balance</li>
+                        <li><input type="checkbox"> Nike</li>
+                        <li><input type="checkbox"> Puma</li>
+                    </ul>
+                </div>
+
+                <div class="filter_category">
+                    <h4>Color</h4>
+                    <ul class="color_list">
+                        <li><div class="color_box" style="background-color: #FF5733;"></div> Red</li>
+                        <li><div class="color_box" style="background-color: #33FF57;"></div> Green</li>
+                        <li><div class="color_box" style="background-color: #3357FF;"></div> Blue</li>
+                        <li><div class="color_box" style="background-color: #F1C40F;"></div> Yellow</li>
+                        <li><div class="color_box" style="background-color: #8E44AD;"></div> Purple</li>
+                        <li><div class="color_box" style="background-color: #ffffff;"></div> White</li>
+                        <li><div class="color_box" style="background-color: #000000;"></div> Black</li>
+                    </ul>
+                </div>
+
+                <div class="filter_category">
+                    <h4>Price</h4>
+                    <label for="minPrice">Min: R$</label>
+                    <input type="number" id="minPrice" value="0" min="0">
+                    
+                    <label for="maxPrice">Max: R$</label>
+                    <input type="number" id="maxPrice" value="2000" min="0">
+                </div>
+
+                <div class="filter_category_comments">
+                  <h4>Comments</h4>
+                  <input type="text" name="comments" id="input_comments" placeholder="Write what do you want in our store">
+                </div>
+
+                <div class="feedback-container">
+                  <h4>Rate our service:</h4>
+                  <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                  </div>
+                </div>
+                
+                <div class="store_name">
+                  <h4>©Stride Sneakers</h4>
+                </div>
+          </div>
+        </div>
+
+      <!-- Inicio das imagens,preço,etc -->
+      <section id="section-all" class="section-product-all">
+          <div class="card-all">
+            <img src="images/Jordan 4 Metalic Gold.avif" alt="Product 1">
+            <h3>Jordan 4 Metalic Gold</h3>
+            <p class="price">R$ 999,99</p>
+            <p class="installment">12x de R$ 83,25 interest free</p>
+            <a href="./product.html">
+              <button class="buy">buy</button>
+            </a>
+          </div>
+          <div class="card-all">
+            <img src="images/Jordan 4 Thunder.avif" alt="Product 2">
+            <h3>Jordan 4 Thunder</h3>
+            <p class="price">R$ 999,99</p>
+            <p class="installment">12x de R$ 83,25 interest free</p>
+            <a href="./product.html">
+              <button class="buy">buy</button>
+            </a>
+          </div>
+          <div class="card-all">
+            <img src="images/Jordan 4 Wet Cement.avif" alt="Product 3">
+            <h3>Jordan 4 Wet Cement</h3>
+            <p class="price">R$ 999,99</p>
+            <p class="installment">12x de R$ 83,25 interest free</p>
+            <a href="./product.html">
+              <button class="buy">buy</button>
+            </a>
+          </div>
+          <div class="card-all">
+            <img src="images/Dunk Low Malachite.avif" alt="Product 4">
+            <h3>Dunk Low Malachite</h3>
+            <p class="price">R$ 999,99</p>
+            <p class="installment">12x de R$ 83,25 interest free</p>
+            <a href="./product.html">
+              <button class="buy">buy</button>
+            </a>
+          </div>
+          <div class="card-all">
+            <img src="images/Dunk Low Black Raspberry.avif" alt="Product 5">
+            <h3>Dunk Low Black Raspberry</h3>
+            <p class="price">R$ 999,99</p>
+            <p class="installment">12x de R$ 83,25 interest free</p>
+            <a href="./product.html">
+              <button class="buy">buy</button>
+            </a>
+          </div>
+          <div class="card-all">
+            <img src="images/Dunk Low Vintage Green.avif" alt="Product 6">
+            <h3>Dunk Low Vintage Green</h3>
+            <p class="price">R$ 999,99</p>
+            <p class="installment">12x de R$ 83,25 interest free</p>
+            <a href="./product.html">
+              <button class="buy">buy</button>
+            </a>
+          </div>
+          <div class="card-all">
+            <img src="images/NOCTA Black.avif" alt="Product 7">
+            <h3>NOCTA Black</h3>
+            <p class="price">R$ 999,99</p>
+            <p class="installment">12x de R$ 83,25 interest free</p>
+            <a href="./product.html">
+              <button class="buy">buy</button>
+            </a>
+          </div>
+          <div class="card-all">
+            <img src="images/Giannis Freak.avif" alt="Product 8">
+            <h3>Giannis Freak</h3>
+            <p class="price">R$ 999,99</p>
+            <p class="installment">12x de R$ 83,25 interest free</p>
+            <a href="./product.html">
+              <button class="buy">buy</button>
+            </a>
+          </div>
+          <div class="card-all">
+            <img src="images/Book 1 Haven.avif" alt="Product 9">
+            <h3>Book 1 Haven</h3>
+            <p class="price">R$ 999,99</p>
+            <p class="installment">12x de R$ 83,25 interest free</p>
+            <a href="./product.html">
+              <button class="buy">buy</button>
+            </a>
+          </div>
+          <div class="card-all">
+            <img src="images/Jordan 5 'El Grito'.avif" alt="Product 10">
+            <h3>Jordan 5 'El Grito'</h3>
+            <p class="price">R$ 999,99</p>
+            <p class="installment">12x de R$ 83,25 interest free</p>
+            <a href="./product.html">
+              <button class="buy">buy</button>
+            </a>
+          </div>
+          <div class="card-all">
+            <img src="images/Air Max DN.avif" alt="Product 1">
+            <h3>Air Max DN</h3>
+            <p class="price">R$ 999,99</p>
+            <p class="installment">12x de R$ 83,25 interest free</p>
+            <a href="./product.html">
+              <button class="buy">buy</button>
+            </a>
+          </div>
+          <div class="card-all">
+            <img src="images/Jordan 1 Game Royal.avif" alt="Product 1">
+            <h3>Jordan 1 Game Royal</h3>
+            <p class="price">R$ 999,99</p>
+            <p class="installment">12x de R$ 83,25 interest free</p>
+            <a href="./product.html">
+              <button class="buy">buy</button>
+            </a>
+          </div>
+        </div>
+      </section>
+            
+      </main>
+
+      <div class="infos">
+        <div class="infoBox">     
+          <h2>Payment Methods</h2>
+          <p>We pay for your purchase in up to 48 interest-free installments on all credit cards or with up to a 5% cash discount.</p>
+        </div>
+        <div class="infoBox">
+          <h2>Our Contacts</h2>
+          <p>Coverage throughout the entire country! No matter where you are.</p>
+          <p>(19)99999-9999</p>
+        </div>
+        <div class="infoBox">
+          <h2>Service</h2>
+          <p>Physical store Open from 08:00 to 20:00 Monday to Friday</p>
+          <p>(19)99999-9999</p>
+        </div>
+      </div>
+
+      <footer class="footer">
+          <div class="footer_content">
+              <div class="info_footer">
+                  <h3>Return Policy</h3>
+                  <p>We believe you should love your new pair of sneakers. If for any reason you are not satisfied, we offer a simple and transparent return policy. You can return or exchange your product within a specific timeframe, ensuring that your shopping experience is always positive.</p>
+              </div>
+      
+              <div class="info_footer">
+                  <h3>Customer Service</h3>
+                  <p>Your satisfaction is our priority. Our team is always ready to help, whether it’s to clarify questions about products, sizes, or the purchasing process. Contact us through our chat or email, and we will be pleased to assist you quickly and efficiently.</p>
+              </div>
+      
+              <div class="info_footer">
+                  <h3>Leave Your Review</h3>
+                  <p>Thank you for visiting our website! Your opinion is very important to us. We invite you to evaluate your experience, our products, and services. Your feedback helps us to continuously improve and offer solutions that meet your needs.</p>
+              </div>
+          </div>
+      
+          <div class="footer_icons">
+              <a href="https://www.linkedin.com/in/lucas-bareli-384021293/" target="_blank">
+                  <i class="bi bi-linkedin"></i>
+              </a>    
+          
+              <span class="icon_container">
+                  <a href="https://www.figma.com/design/hamj7hkitUuVq0Czg0jEob/Ecommerce?node-id=0-1&t=Dx8tAXSYwHN3zBvT-1" target="_blank">
+                      <img class="icons_redes" src="images/Icon Figma.png" alt="Figma">
+                  </a>
+              </span>
+          
+              <a href="https://github.com/LucasBareli" target="_blank">
+                  <i class="bi bi-github"></i>
+              </a>
+          </div>
+          
+          <div class="DireitosReservados">
+            <p>© Campinas, SP - 2024 Lucas Duarte Bareli - All rights reserved.</p>
+          </div>
+          
+      </footer>
+
+        
+</html>
