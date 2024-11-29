@@ -14,57 +14,52 @@
       <link rel="stylesheet" href="styles/styles.css">
       <script type="module" src="scripts/products.js" defer></script>
       <title>Strider | Products</title>
+
+
+
+    <title>Alpha | CO - Products</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles_home.css">
+    
+    <script src="./scripts/database.js" defer></script>
+    <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/carrosel.js" defer></script>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <!-- Inicio do body -->
     <body>
-    <!-- Inicio do Header -->
-        <header id="header">
-            <div class="blue_header">
-                <p>All products are on sale!!!</p>
-            </div>
-            <div class="info_bar">
-                <div class="header_logo_container">
-                        <span id="logo_stride">Stride</span>
-                        <span id="logo_sneakers">Sneakers</span>
-                </div>
-                    <nav class="container">
-                        <ul class="menus">
-                            <a id="menus_urls" href="index.html">Home</a>
-                            <a id="menus_urls" href="#best_sellers">Best Sellers</a>
-                            <a id="menus_urls" href="#promotions">Promotions</a>
-                            <a id="menus_urls" href="about_us.html">About us</a>
-                            <a id="menus_urls" href="products.html">All products</a>
-                            <a id="menus_urls" href="adm.html">Adm</a>
-                        </ul>
-                    </nav>
-            </div>
-    <!-- Fim do header -->
-    
-    <!-- Inicio das abas de pesquisa,carrinho,etc -->
-            <div class="main_header">
-                <div class="container">
-                    <div class="icon_list">
-                        <i class="bi bi-list"></i>
-                    </div>
-                    <div class="header_search_bar">
-                        <i class="bi bi-search"></i>
-                        <input type="text" name="search" id="input_search" placeholder="What are you looking for?">
-                    </div>
-    
-                    <div class="header_icons">
-                      <a href="login.html">
-                        <i class="bi bi-person"></i>
-                      </a>
-                      <a href="checkout.html">
-                        <i class="bi bi-bag"></i>
-                      </a>
-                      <a href="contact_us.html">
-                        <i class="bi bi-chat-square-dots"></i>
-                      </a>
-                    </div>
-                </div>
-            </div>
-        </header>
+    <!-- Cabeçalho -->
+    <header class="header">
+      <nav class="navbar">
+          <div class="nav">
+              <a href="./index.html">
+                  <img src="./imagens/logo_alpha-.png" class="logo" alt="Logo">
+              </a>
+              <div class="nav-items">
+                  <div class="search">
+                      <input type="text" class="search-box" placeholder="Search product">
+                      <button class="search-btn">Search</button>
+                  </div class="icons">
+                  <a href="./index.html"><i class="fa-solid fa-user fa-2xl" style="color: #000000;"></i></a>
+                  <a href="./checkout.html"><i class="fa-solid fa-cart-shopping fa-2xl" style="color: #000000;"></i></a>
+              </div>
+          </div>
+      </nav>
+      <ul class="links-container">
+          <li class="link-item"><a href="./index.html" class="link">Home</a></li>
+          <li class="link-item"><a href="./products.html" class="link">Female</a></li>
+          <li class="link-item"><a href="./products.html" class="link">Male</a></li>
+          <li class="link-item"><a href="./products.html" class="link">Accessory</a></li>
+          <li class="link-item"><a href="./index.html" class="link">About Us</a></li>
+      </ul>
+    </header>
 
       <!-- Componente Grid de Produtos -->
         <!-- AREA RESERVADA PARA INSERCAO DOS CARDS DE PRODUTOS - NAO EXCLUIR -->
