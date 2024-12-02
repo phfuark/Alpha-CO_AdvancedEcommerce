@@ -327,14 +327,17 @@ main{
     
   
     button.prev, button.next {
-      transform: translateY(-50%);
-      color: rgb(0, 0, 0);
-      border: none;
-      padding: 12px 20px; 
-      border-radius: 50%;  
-      cursor: pointer;
-      z-index: 10;
-      transition: all 0.3s ease; 
+    transform: translateY(-50%);
+    color: rgb(0, 0, 0);
+    background-color: #acaaaa    ;
+    border: none;
+    padding: 12px 20px; 
+    border-radius: 5px;  
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease; 
     }
     
     button.prev {
@@ -408,6 +411,10 @@ main{
         flex-basis: 200px;
         height: 27.25rem;
     }
+
+    .product-card{
+        width: 12.5rem;
+    }
     
     .products-container {
         display: grid;
@@ -415,8 +422,21 @@ main{
         column-gap: 16px;
         padding-bottom: 50px;
     }
+
     
-    .section-product {
+    #title_ours_products{
+        text-transform: uppercase;
+        font-size: 40px;
+        font-family: "Inter", sans-serif;
+    }
+    
+    #products_section{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;    
+    }
+
+    .tion-produsecct {
         padding: 3.125em 0;
         position: relative;
     }
@@ -427,6 +447,15 @@ main{
         margin: auto;
         overflow: hidden;
       }
+
+    .section-product-grid{
+        display: grid;
+        grid-template-columns: repeat(4 , 1fr);
+        gap: 10px; 
+        justify-content: center;
+        margin-right: 30px; 
+        padding-bottom: 80px;
+    }
     
     .prev, .next {
         position: absolute;
@@ -659,4 +688,16 @@ footer {
 .section-product-all{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* adm.html */
+
+.main-content{
+    padding-inline: 15rem;
+}
+
+.footer-especial{
+    position: fixed;
+    bottom:0px;
 }

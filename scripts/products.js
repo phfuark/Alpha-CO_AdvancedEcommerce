@@ -1,3 +1,4 @@
+
 import { database } from "./database.js";
 import { getProdId, loadProducts} from "./functions.js";
 
@@ -8,4 +9,3 @@ const sectionProducts = document.querySelector(".section-product-grid")
 loadProducts(database,sectionProducts);
 
 getProdId()
-

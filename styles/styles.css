@@ -586,12 +586,6 @@ main {
     padding-bottom: 80px;
 }
 
-#title_ours_products{
-    text-transform: uppercase;
-    padding-left: 40px;
-    font-size: 40px;
-    font-family: "Inter", sans-serif;
-}
 
 .section-products {
     display: flex;
@@ -1114,35 +1108,7 @@ main {
     padding: 3.125em 0;
     position: relative;
 }
-
-.section-product-carrousel {
-    position: relative;
-    max-width: 90%;
-    margin: auto;
-    overflow: hidden;
-    padding: 20px 0;
-  }
-
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    color: rgb(23, 23, 23);
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 32px;
-  }
-  
-  .prev {
-    left: -70px;
-  }
-  
-  .next {
-    right: -70px;
-  }
-
+    
   .grid_col_1 {
     grid-area: col1;
     padding:25px
