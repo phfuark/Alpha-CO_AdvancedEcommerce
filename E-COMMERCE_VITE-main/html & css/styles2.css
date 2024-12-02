@@ -1,0 +1,289 @@
+/* ------------------------------ 
+    Reset de Estilos Globais 
+   ------------------------------ */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* ------------------------------ 
+    Estilos da Barra de Navegação 
+   ------------------------------ */
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    z-index: 9;
+}
+
+.nav {
+    padding: 1rem 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 2.5rem;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    width: 31.25rem;
+    display: flex;
+}
+
+.search-box::placeholder {
+    color: #0b0b0b;
+}
+.search input:focus:placeholder-shown {
+    color: #000000;
+}
+
+.search input:focus::placeholder {
+    color: #e3e3e3;
+    transition: 0.5s;
+}
+
+.search-box {
+    width: 80%;
+    height: 2.5rem;
+    padding: 0.625rem;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+    border: 0.0625rem solid #000000;
+    text-transform: capitalize;
+    background: none;
+    color: #272727;
+    outline: none;
+}
+
+.search-btn {
+    width: 20%;
+    height: 2.5rem;
+    padding: 0.625rem 1.25rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #000000;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 0.9375rem;
+    border-top-right-radius: 0.3em;
+    border-bottom-right-radius: 0.3rem;
+}
+
+.search-btn:hover {
+    border: solid 0.0625rem #000000;
+    background-color: rgb(245, 245, 245);
+    color: #000000;
+    transition: 0.75s;
+}
+
+.nav-items a {
+    margin-left: 1.25rem;
+}
+
+.nav-items a img {
+    width: 1.875rem;
+}
+
+/* ------------------------------ 
+    Estilos do Menu de Links 
+   ------------------------------ */
+.links-container {
+    width: 100%;
+    display: flex;
+    padding: 1rem 10vw;
+    justify-content: center;
+    list-style: none;
+    border-top: 0.0625rem solid #d1d1d1;
+    background: #ffffff;
+}
+
+.link {
+    text-transform: capitalize;
+    padding: 0 0.625rem;
+    margin: 0 0.3125rem;
+    text-decoration: none;
+    color: #000000;
+    transition: .5s;
+}
+.link:hover{
+    color: #868686;
+}
+
+
+/* ------------------------------ 
+    Grid de Produtos 
+   ------------------------------ */
+.product-container{
+    display: flex;
+    justify-content: center;
+}
+
+.title-products{
+    padding-left: 15rem
+}
+
+
+.product-page{
+    display: flex;
+    justify-content: center;
+    width: 100rem;
+}
+
+.product-img{
+    padding-right: 4rem;
+}
+
+.product img {
+    width: 30rem;
+    height: 30rem;
+}
+
+
+.product .name {
+    font-size: 3.6rem;
+    color: #000000;
+}
+
+.product .qnt{
+    padding-left: 0.3rem;
+    font-size: 1.3rem;
+    color: #555;
+}
+
+.product .descricao{
+    font-size: 1.5rem;
+    color: #555;
+}
+
+
+.product .price {
+    font-size: 2rem;
+    color: #333;
+    font-family:Helvetica;
+
+}
+
+.product-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45rem;
+}
+
+/* ------------------------------ 
+    Botões de Produtos 
+   ------------------------------ */
+.product button {
+    width: 100%;
+    height: 5rem;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    padding: 0.625rem 1.25rem;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+.product button:hover {
+    border: solid 0.0625rem #383838;
+    background-color: rgb(245, 245, 245);
+    color: #383838;
+    transition: 0.5s;
+}
+
+/* ------------------------------ 
+    Estilos do Rodapé - Redes Sociais 
+   ------------------------------ */
+.redes-sociais {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes-sociais img{
+    width: 18.75rem;
+    height: 2.5rem;
+}
+
+.redes-sociais-ext img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+/* ------------------------------ 
+    Conteúdo do Rodapé 
+   ------------------------------ */
+
+footer {
+    margin-top: 2.5rem;
+    padding-inline: 11.95rem;   
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.fixarRodape {
+    bottom: 0;
+    position: fixed;
+}
+
+.div-footer {
+    background: #F0F0F0;
+    height: 0.0625rem;
+    border: none;
+    margin-bottom: 1.25rem;
+    margin-top: 1.25rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+}
+
+.footer-content h4 {
+    margin-bottom: 0.625rem;
+    font-size: 1.125rem;
+    color: #333;
+
+}
+
+.footer-content p {
+    font-size: 0.875rem;
+    color: #555;
+}
+
+.redes-sociais-ext a i {
+    font-size: 30px; /* Ajuste o tamanho conforme necessário */
+    color: #000;    /* Defina a cor desejada */
+    margin: 0 10px; /* Espaçamento entre os ícones */
+}
+
+
+/* ------------------------------ 
+    Imagens dos Métodos de Pagamento 
+   ------------------------------ */
+.payments {
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.payments-icon{
+    display: flex;
+    justify-content: right;
+}
+
+
+

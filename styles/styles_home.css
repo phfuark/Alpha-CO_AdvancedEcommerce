@@ -8,6 +8,10 @@
     font-family: 'Raleway', sans-serif;
 }
 
+main{
+    padding-inline: 15rem;
+}
+
 /* ------------------------------ 
     Estilos da Barra de Navegação 
    ------------------------------ */
@@ -21,9 +25,10 @@
 }
 
 .nav {
-    padding: 1rem 10vw;
     display: flex;
     justify-content: space-between;
+    padding: 1rem;
+    padding-inline: 11.95rem;
 }
 
 .logo {
@@ -191,19 +196,33 @@
     Estilos dos produtos
    ------------------------------ */
 
+
 #section-1{
-    margin-inline: 11.95rem;
+    margin-inline: 2rem;
     display: flex;
     justify-content: center;
-    
+    max-width: 90%;
 }
 
 .carrousel{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     max-width: 90%;
-
 }
+
+.carrousel-products{
+    padding-inline: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carrosel-title{
+    padding-top: 1.25rem;
+    padding-left: 15rem;
+    padding-bottom: 1.25rem;
+}
+
 .product-card-title{
     font-size: 1rem;
     color: #000000;
@@ -308,8 +327,6 @@
     
   
     button.prev, button.next {
-      position: absolute;
-      top: 50%;
       transform: translateY(-50%);
       color: rgb(0, 0, 0);
       border: none;
@@ -321,11 +338,11 @@
     }
     
     button.prev {
-      left: 10px;
+      left: 1px;
     }
     
     button.next {
-      right: 10px;
+      right: 1px;
     }
     
     button.prev:hover, button.next:hover {
@@ -409,27 +426,17 @@
         max-width: 90%;
         margin: auto;
         overflow: hidden;
-        padding: 20px 0;
       }
     
     .prev, .next {
         position: absolute;
         top: 50%;
-        transform: translateY(-50%);
         background-color: transparent;
         color: rgb(23, 23, 23);
         border: none;
         padding: 10px 20px;
         cursor: pointer;
         font-size: 32px;
-      }
-      
-      .prev {
-        left: -70px;
-      }
-      
-      .next {
-        right: -70px;
       }
     
       .grid_col_1 {
@@ -584,7 +591,7 @@ footer {
     padding-inline: 11.95rem;
     margin-top: 2.5rem;
     width: 100%;
-    padding-bottom: 1rem;
+    bottom: 0;
 }
 
 .fixarRodape {
@@ -602,9 +609,16 @@ footer {
     margin-top: 1.25rem;
 }
 
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .footer-content {
     display: flex;
     justify-content: space-between;
+    height: 5rem;
 }
 
 .footer-content h4 {
@@ -630,8 +644,9 @@ footer {
     Imagens dos Métodos de Pagamento 
    ------------------------------ */
 .payments {
+    display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 .payments-icon{
@@ -640,3 +655,8 @@ footer {
 }
 
 
+/* products.html */
+.section-product-all{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}

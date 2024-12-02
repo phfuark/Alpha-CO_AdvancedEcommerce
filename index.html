@@ -4,21 +4,19 @@
   <head>
 
     
-    <title>Alpha | CO</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles_home.css">
-    
-    <script type="module" src="./scripts/home.js" defer></script>
-    
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+      <title>Alpha | CO</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./styles/styles_home.css">
+      
+      <script type="module" src="./scripts/home.js" defer></script>
+      
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <!-- Inicio do body -->
     <body>
@@ -27,14 +25,14 @@
       <nav class="navbar">
           <div class="nav">
               <a href="./index.html">
-                  <img src="./imagens/logo_alpha-.png" class="logo" alt="Logo">
+                  <img src="./images/logo_alpha-.png" class="logo" alt="Logo">
               </a>
               <div class="nav-items">
                   <div class="search">
                       <input type="text" class="search-box" placeholder="Search product">
                       <button class="search-btn">Search</button>
                   </div class="icons">
-                  <a href="./index.html"><i class="fa-solid fa-user fa-2xl" style="color: #000000;"></i></a>
+                  <a href="./login.html"><i class="fa-solid fa-user fa-2xl" style="color: #000000;"></i></a>
                   <a href="./checkout.html"><i class="fa-solid fa-cart-shopping fa-2xl" style="color: #000000;"></i></a>
               </div>
           </div>
@@ -58,7 +56,7 @@
           <a href="./products.html"><button>Shop Now!</button></a>
         </div>
           <div class="img-banner">
-              <img src="imagens/Design sem nome(2).png" alt="">
+              <img src="images/Design sem nome(2).png" alt="">
           </div>
       </div>
     </div>
@@ -67,39 +65,43 @@
     <h2 class="categoryh2">Popular Categories</h2>
     <div class="categories">
         <div class="category">
-            <img src="./imagens/feminino.png" alt="Women's">
+            <img src="./images/feminino.png" alt="Women's">
             <h3>Women's</h3>
             <p>Check out our selection of women's clothing.</p>
             <a href="./products.html"><button>Explore</button></a>
         </div>
         <div class="category">
-            <img src="./imagens/masculino.png" alt="Men's">
+            <img src="./images/masculino.png" alt="Men's">
             <h3>Men's</h3>
             <p>Men's clothing with the style and comfort you deserve.</p>
             <a href="./products.html"><button>Explore</button></a>
         </div>
         <div class="category">
-            <img src="./imagens/acessorios.png" alt="Accessories">
+            <img src="./images/acessorios.png" alt="Accessories">
             <h3>Accessories</h3>
             <p>The best accessories to complement your look.</p>
             <a href="./products.html"><button>Explore</button></a>
         </div>
     </div>
 
+    
+    <h2 class="carrosel-title">Products</h2>
     <!-- Carrosel 1 -->
-    <section id="section-1" class="section-product-carrousel">
-      <button class="prev">&laquo;</button>
-      <div class="carrousel">
+     <div class="carrousel-products">
+      <section id="section-1" class="section-product-carrousel">
+        <button class="prev">&laquo;</button>
+          <div class="carrousel">
 
-      </div>
-      <button class="next">&raquo;</button>
-    </section>
+          </div>
+        <button class="next">&raquo;</button>
+      </section>
+    </div>
 
     <!-- Inicio do footer -->
     <footer>
 
       <div class="redes-sociais">
-          <a href="#"><img src="./imagens/logo_alpha-.png" alt="Lobo Alpha.co" width="221" height="90" loading="lazy"><a>
+          <a href="#"><img src="./images/logo_alpha-.png" alt="Lobo Alpha.co" width="221" height="90" loading="lazy"><a>
           <div class="redes-sociais-ext">
               <a href="#"><i class="fa fa-linkedin"></i></a>
               <a href="#"><i class="fa fa-instagram"></i></a>
@@ -110,23 +112,21 @@
       <hr class="div-footer">
 
       <div class="footer-content">
-        <div>
+        <div class="footer-text">
             <h4>About Us</h4>
             <p>We are a company committed to offering the best products with a focus on customer satisfaction.</p>
+            <div class="DireitosReservados">
+              <p>© Campinas, SP - 2024 Paulo Henrique Preciliano da Silva - All rights reserved.</p>
+            </div>
         </div>
         <div class="payments">
             <h4>Payment Methods</h4>
             <div class="payments-icon">
-                <i class="fab fa-cc-visa" style="font-size: 30px; margin-right: 10px;"></i>
-                <i class="fab fa-cc-mastercard" style="font-size: 30px;"></i>
+                <i class="fab fa-cc-visa" style="font-size: 40px; margin-right: 10px;"></i>
+                <i class="fab fa-cc-mastercard" style="font-size: 40px;"></i>
             </div>
         </div>
       </div>
-
-      <div class="DireitosReservados">
-        <p>© Campinas, SP - 2024 Paulo Henrique Preciliano da Silva - All rights reserved.</p>
-      </div>
-      
   </footer>
   
 </body>

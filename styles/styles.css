@@ -168,17 +168,6 @@
 }
   
   
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-size: 18px;
-    border: none;
-    padding: 10px;
-}
-
   
 /* End - Slider */ 
 
@@ -629,11 +618,12 @@ main {
 }
 
 .icon-item i {
-    margin-left: 5px; 
+    margin-left: 5px;
+
 }
 
 .icon-item:hover {
-    color: #3c68aa; 
+    color: #919191;
 }
 
 
@@ -1067,8 +1057,8 @@ main {
 
 .carrousel {
     display: flex;
-    transition: transform 0.5s ease;
     gap: 16px;
+    transition: transform 0.3s ease;
   }
 
 .main-text{
