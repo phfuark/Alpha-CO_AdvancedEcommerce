@@ -1,6 +1,6 @@
 #https://www.figma.com/proto/jrVNwoJA9Sdpb3MUK8pFUG/Untitled?node-id=1-2&node-type=FRAME&t=cmFBkPcFEjKHLP1y-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1
 
-# Bem-vindos ao Projeto Integrador 2024-2
+# Bem-vindos ao Projeto Integrador 2024
 
 Você está recebendo o template básico de um e-commerce, com funcionalidades já programadas em JavaScript. Neste desafio, sua missão é escolher um produto qualquer (não serão aceitas prestações de serviço, nem produtos perecíveis como alimentos ou serviços de entrega) e criar uma loja virtual para ele.
 
