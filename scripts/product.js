@@ -24,7 +24,7 @@ botaoComprar.addEventListener('click',()=>{
     let quantity = parseInt(document.querySelector("#quantity").value) 
     produto.quantity = quantity
     listaCompras.push(produto)
-    alert("Produto adicionado com sucesso!")
+    alert("Product added successfully!")
     localStorage.setItem('listaCompras',JSON.stringify(listaCompras))
     console.log(listaCompras)
     window.location = "./checkout.html"

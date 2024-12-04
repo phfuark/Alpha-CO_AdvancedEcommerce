@@ -20,11 +20,11 @@ export function loadProducts(productList, load) {
           <h4 class="product-card-reference">Cod. ${produto.codigoProduto}</h4>
           <h3 class="product-card-price">R$ ${produto.preco.toFixed(2)}</h3>
           <h4 class="product-card-installment">
-            10x de R$ ${valParcela} s/juros
+            10x of R$ ${valParcela} without interest.
           </h4>
         </div>
         <a href="./product.html">
-        <button id="${produto.codigoProduto}" class="product-card-btn">COMPRAR</button>
+        <button id="${produto.codigoProduto}" class="product-card-btn">Buy now!</button>
         </a>
       </div>`;
     load.innerHTML += html;
@@ -82,7 +82,7 @@ productTitle.children[1].innerText = `${produto.tituloProduto}`
 
 <div class="product_description_container">
  <h3 class="main-text">
-   Descrição
+   Description
 
  </h3>
  <p class="product_description">
@@ -94,7 +94,7 @@ selecaoProduto.innerHTML = HTML
 const price = document.querySelector(".product_price_container")
 const parcela = (produto.preco/10).toFixed(2)
 price.children[0].innerText = `R$ ${produto.preco.toFixed(2)}`
-price.children[1].innerText = `Ou em ate 10x sem juros de R$ ${parcela} no cartão de credito`
+price.children[1].innerText = `Or up to 10x without interest of R$ ${parcela} on the credit card.`
 
 
 
@@ -108,7 +108,7 @@ function cartTotal(cartItens) {
 export function loadCartItem(cartItens,cartItensHTML){
 
   if(cartItens.length == [] || cartItens.length == [] ){
-    cartItensHTML.innerHTML = `Seu carrinho está vazio`
+    cartItensHTML.innerHTML = `Your cart is empty.`
   } else {
     cartItens.forEach(item => {  
       let html = `
@@ -130,7 +130,7 @@ export function loadCartItem(cartItens,cartItensHTML){
                           <span>${item.quantity}</span>
                           <i class="bi bi-plus"></i>
                       </div>
-                      <button id="${item.codigoProduto}" class="remove">remover</button>
+                      <button id="${item.codigoProduto}" class="remove">remove</button>
                      </div>
                   </div>
               </div>
@@ -190,7 +190,7 @@ const order = {
 
 pedidos.push(order);
 localStorage.setItem("pedidos", JSON.stringify(pedidos));;
-alert("pedido realizado com sucesso")
+alert("Order placed successfully!")
 localStorage.removeItem("listaCompras");
 localStorage.removeItem("totalValue");
 window.location = "./index.html"

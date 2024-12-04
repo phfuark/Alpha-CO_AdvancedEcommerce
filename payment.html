@@ -1,29 +1,14 @@
 <!DOCTYPE html>
-  <html lang="pt-br">
-    <!-- Referencias de fonte, icones -->
+<html lang="en">
+  <!-- References for fonts, icons -->
   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-      <link rel="shortcut icon" type="imagex/png" href="images/Icon - Sneakers.png">
-      <link rel="stylesheet" href="styles/styles.css">
-      <script type="module" src="scripts/payment.js" defer></script>
-      <title>Strider | Payment</title>
-
-
-      
       <title>Alpha | CO - Payment</title>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="./styles/styles_home.css">
-      
-      <script src="./scripts/database.js" defer></script>
-      <script src="./scripts/main.js" defer></script>
-      <script src="./scripts/carrosel.js" defer></script>
+
+      <script type="module" src="scripts/payment.js" defer></script>
+      <link rel="stylesheet" href="styles/styles.css">
       
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
@@ -31,10 +16,10 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <!-- Inicio do body -->
-    <body>
-    <!-- Cabeçalho -->
+  </head>
+  <!-- Start of body -->
+  <body>
+    <!-- Header -->
     <header class="header">
       <nav class="navbar">
           <div class="nav">
@@ -56,84 +41,82 @@
           <li class="link-item"><a href="./products.html" class="link">Female</a></li>
           <li class="link-item"><a href="./products.html" class="link">Male</a></li>
           <li class="link-item"><a href="./products.html" class="link">Accessory</a></li>
-          <li class="link-item"><a href="./index.html" class="link">About Us</a></li>
+          <li class="link-item"><a href="./about_us.html" class="link">About Us</a></li>
       </ul>
     </header>
 
-  <main class="product main-content container">
-    <div class="product text-container">
+  <main class="product_main-content_container">
+    <div class="product_text-container">
       <h2 class="main-text">Checkout</h2>
-      <p>Verifique os itens do carrinho e finalize agora</p>
+      <p>Check the items in your cart and complete your purchase now</p>
     </div>
 
     <section class="product text-container">
       <div id="billing">
         <div class="grid_col_1">
           <form action="">
-            <h2>Seus Dados:</h2>
+            <h2>Your Information:</h2>
             <div class="form-fields">
-              <Div class="form-field">
+              <div class="form-field">
                 <label for="e-mail">E-mail</label>
                 <input type="e-mail" name="e-mail" id="e-mail" placeholder="e-mail">
-              </Div>
+              </div>
               <div class="form-group container-flex">
-                <Div class="form-field">
-                  <label for="name">Nome</label>
-                  <input type="text" name="name" id="name" placeholder="Nome">
-                </Div>
-                <Div class="form-field">
-                  <label for="Sobrenome">Sobrenome</label>
-                  <input type="text" name="surname" id="surname" placeholder="Sobrenome">
-                </Div>
+                <div class="form-field">
+                  <label for="name">First Name</label>
+                  <input type="text" name="name" id="name" placeholder="First Name">
+                </div>
+                <div class="form-field">
+                  <label for="Surname">Last Name</label>
+                  <input type="text" name="surname" id="surname" placeholder="Last Name">
+                </div>
               </div>
 
               <div class="form-group container-flex">
-                <Div class="form-field">
-                  <label for="phone">Telefone</label>
-                  <input type="text" name="phone" id="phone" placeholder="Telefone com DDD">
-                </Div>
-                <Div class="form-field">
-                  <label for="CPF">CPF</label>
-                  <input type="text" name="CPF" id="CPF" placeholder="CPF">
-                </Div>
+                <div class="form-field">
+                  <label for="phone">Phone</label>
+                  <input type="text" name="phone" id="phone" placeholder="Phone with area code">
+                </div>
+                <div class="form-field">
+                  <label for="CPF">ID Number</label>
+                  <input type="text" name="CPF" id="CPF" placeholder="ID Number">
+                </div>
               </div>
               <div class="form-group container-flex">
-                <Div class="form-field">
-                  <label for="address">Logradouro</label>
-                  <input type="text" name="address" id="address" placeholder="Logradouro">
-                </Div>
-                <Div class="form-field cep">
+                <div class="form-field">
+                  <label for="address">Street</label>
+                  <input type="text" name="address" id="address" placeholder="Street">
+                </div>
+                <div class="form-field cep">
                   <label for="zip">CEP</label>
                   <input type="text" name="zip" id="zip" placeholder="CEP">
-                </Div>
-              </div>
-
-
-              <div class="form-group container-flex">
-                <Div class="form-field">
-                  <label for="address">Nº</label>
-                  <input type="text" name="number" id="number" placeholder="Nº">
-                </Div>
-                <Div class="form-field">
-                  <label for="address_2">Complemento</label>
-                  <input type="address_2" name="address_2" id="address_2" placeholder="Complemento">
-                </Div>
-                <Div class="form-field">
-                  <label for="neighborhood">Bairro</label>
-                  <input type="text" name="neighborhood" id="neighborhood" placeholder="Bairro">
                 </div>
               </div>
 
               <div class="form-group container-flex">
-
                 <div class="form-field">
-                  <label for="city">Cidade</label>
-                  <input type="text" name="city" id="city" placeholder="Cidade">
+                  <label for="address">Number</label>
+                  <input type="text" name="number" id="number" placeholder="Number">
+                </div>
+                <div class="form-field">
+                  <label for="address_2">Additional Information</label>
+                  <input type="address_2" name="address_2" id="address_2" placeholder="Additional Information">
+                </div>
+                <div class="form-field">
+                  <label for="neighborhood">Neighborhood</label>
+                  <input type="text" name="neighborhood" id="neighborhood" placeholder="Neighborhood">
+                </div>
+              </div>
+
+              <div class="form-group container-flex">
+                <div class="form-field">
+                  <label for="city">City</label>
+                  <input type="text" name="city" id="city" placeholder="City">
                 </div>
                 <div class="form-field uf">
-                  <label for="state">Estado</label>
+                  <label for="state">State</label>
                   <select id="estado" name="UF">
-                    <option value="" selected>Selecione...</option>
+                    <option value="" selected>Select...</option>
                     <option value="AC">AC</option>
                     <option value="AL">AL</option>
                     <option value="AP">AP</option>
@@ -173,49 +156,49 @@
           <div class="total_container container-flex column">
             <div class="total container-flex">
               <h3>SUBTOTAL</h3>
-              <H3>R$ 0.00</H3>
+              <H3>$ 0.00</H3>
             </div>
             <div class="total container-flex">
-              <h3>Frete</h3>
-              <H3>R$ 0.00</H3>
+              <h3>Shipping</h3>
+              <H3>$ 0.00</H3>
             </div>
             <div class="total container-flex">
               <h3>Total</h3>
-              <H3>R$ 0.00</H3>
+              <H3>$ 0.00</H3>
             </div>
 
           </div>
 
-          <button class="button checkout_btn">Finalizar</button>
+          <button class="button checkout_btn">Checkout</button>
           <form class="container-flex">
             <div class="pay-method">
-              <input type="radio" name="pagamento" id="credito" checked><label for="credito">Crédito</label>
+              <input type="radio" name="payment" id="credito" checked><label for="credito">Credit</label>
             </div>
             <div class="pay-method">
-              <input type="radio" name="pagamento" id="debito"><label for="debito">Débito</label>
+              <input type="radio" name="payment" id="debito"><label for="debito">Debit</label>
             </div>
             <div class="pay-method">
-              <input type="radio" name="pagamento" id="pix"><label for="pix">PIX</label>
+              <input type="radio" name="payment" id="pix"><label for="pix">PIX</label>
             </div>
             <div class="pay-method">
-              <input type="radio" name="pagamento" id="bol"><label for="bol">Boleto</label>
+              <input type="radio" name="payment" id="bol"><label for="bol">Boleto</label>
             </div>
           </form>
           <form class="payment">
             <div class="form-field">
-              <label for="nome_cartao">Nome no Cartão:</label>
+              <label for="nome_cartao">Cardholder Name:</label>
               <input type="text" id="nome_cartao" name="nome_cartao" required>
             </div>
 
             <div class="form-field">
-              <label for="numero_cartao">Número do Cartão:</label>
+              <label for="numero_cartao">Card Number:</label>
               <input type="text" id="numero_cartao" name="numero_cartao" maxlength="16" required>
             </div>
 
             <div class="card-info">
               <div class="form-field val">
-                <label for="validade_cartao">Validade:</label>
-                <input type="text" id="validade_cartao" name="validade_cartao" placeholder="MM/AA" maxlength="5"
+                <label for="validade_cartao">Expiration Date:</label>
+                <input type="text" id="validade_cartao" name="validade_cartao" placeholder="MM/YY" maxlength="5"
                   required>
               </div>
 
@@ -230,38 +213,38 @@
     </section>
   </main>
 
-           <!-- Inicio do footer -->
-    <footer>
+  <!-- Start of footer -->
+  <footer>
 
-      <div class="redes-sociais">
-          <a href="#"><img src="./images/logo_alpha-.png" alt="Lobo Alpha.co" width="221" height="90" loading="lazy"><a>
-          <div class="redes-sociais-ext">
-              <a href="#"><i class="fa fa-linkedin"></i></a>
-              <a href="#"><i class="fa fa-instagram"></i></a>
-              <a href="#"><i class="fa fa-github"></i></a>
+    <div class="redes-sociais">
+        <a href="#"><img src="./images/logo_alpha-.png" alt="Lobo Alpha.co" width="221" height="90" loading="lazy"><a>
+        <div class="redes-sociais-ext">
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+        </div>
+    </div>
+
+    <hr class="div-footer">
+
+    <div class="footer-content">
+      <div class="footer-text">
+          <h4>About Us</h4>
+          <p>We are a company committed to offering the best products with a focus on customer satisfaction.</p>
+          <div class="DireitosReservados">
+            <p>© Campinas, SP - 2024 Paulo Henrique Preciliano da Silva - All rights reserved.</p>
           </div>
       </div>
-
-      <hr class="div-footer">
-
-      <div class="footer-content">
-        <div class="footer-text">
-            <h4>About Us</h4>
-            <p>We are a company committed to offering the best products with a focus on customer satisfaction.</p>
-            <div class="DireitosReservados">
-              <p>© Campinas, SP - 2024 Paulo Henrique Preciliano da Silva - All rights reserved.</p>
-            </div>
-        </div>
-        <div class="payments">
-            <h4>Payment Methods</h4>
-            <div class="payments-icon">
-                <i class="fab fa-cc-visa" style="font-size: 40px; margin-right: 10px;"></i>
-                <i class="fab fa-cc-mastercard" style="font-size: 40px;"></i>
-            </div>
-        </div>
+      <div class="payments">
+          <h4>Payment Methods</h4>
+          <div class="payments-icon">
+              <i class="fab fa-cc-visa" style="font-size: 40px; margin-right: 10px;"></i>
+              <i class="fab fa-cc-mastercard" style="font-size: 40px;"></i>
+          </div>
       </div>
-    </footer>
-    
-  </body>
-  </html>
-  <!-- Fim do código -->
+    </div>
+  </footer>
+  
+</body>
+</html>
+<!-- End of code -->

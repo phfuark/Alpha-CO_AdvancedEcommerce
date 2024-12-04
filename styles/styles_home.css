@@ -436,7 +436,8 @@ main{
     #products_section{
         display: flex;
         justify-content: space-between;
-        width: 100%;    
+        width: 100%;
+            
     }
 
     .tion-produsecct {
@@ -455,8 +456,7 @@ main{
         display: grid;
         grid-template-columns: repeat(4 , 1fr);
         gap: 10px; 
-        justify-content: center;
-        margin-right: 30px; 
+        justify-content: c;
         padding-bottom: 80px;
     }
     
@@ -618,6 +618,7 @@ main{
 footer {
     margin-inline: 11.95rem;
     margin-top: 2.5rem;
+    margin-bottom: 1rem;
     width: 96.1rem;
     bottom: 0;
 }
@@ -684,6 +685,75 @@ footer {
 
 
 /* products.html */
+
+.options {
+    display: flex;
+    justify-content: end;
+}
+
+.icon-item {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.icon-item i {
+    margin-left: 5px;
+
+}
+
+.icon-item:hover {
+    color: #919191;
+}
+
+.filter_category label {
+    display: block; 
+    margin: 5px 0; 
+}
+
+.filter_category input { 
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+}
+
+.filter_category_comments {
+    margin-bottom: 20px; 
+    font-size: 18px; 
+    margin-bottom: 10px;
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 5px;
+    width: 100%; 
+}
+ 
+.filter_category_comments input {
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 15px; 
+    margin-bottom: 10px;
+    width: 300px; 
+}
+
+#input_comments {
+    color: #3c68aa;
+}
+
+.feedback-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+
 .section-product-all{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -769,7 +839,13 @@ footer {
     position: fixed;
     bottom:0px;
 }
-
+/* products.html */
+.main-products{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 
 /* product.html */
 #product_page, #checkout, #billing{
@@ -885,6 +961,7 @@ footer {
  
 .product_text-container{
     display: flex;
+    flex-direction: column;
 }
 
 #product-title{
