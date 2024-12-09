@@ -16,7 +16,7 @@ Welcome to my fully customized e-commerce designed to meet the needs of modern c
   Detailed view of product information, with images and descriptions.
 
 - **Checkout Page (checkout.html):**  
-  Shopping cart functionality with a responsive design.
+  Shopping cart functionality.
 
 - **Payment Page (payment.html):**  
   Secure data collection for payment and delivery.
