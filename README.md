@@ -1,6 +1,6 @@
 # 🌟 **Alpha CO - Customized E-commerce** 🌟
 
-Welcome to my fully customized e-commerce designed to meet the needs of modern consumers.
+Welcome to my fully customized e-commerce!
 
 ---
 
