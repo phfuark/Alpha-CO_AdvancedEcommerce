@@ -96,6 +96,8 @@ main{
 
 .icons{
     size: 3rem;
+    display: flex;
+    align-items: center;
 }
 
 .nav-items a {
@@ -871,6 +873,23 @@ footer {
 
 .product.main-text {
     font-size:1.2em;
+}
+
+#export-button{
+    width: 10rem;
+    margin-top: 1rem;
+    padding: 0.625rem 1.25rem;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#export-button:hover{
+    border: solid 0.0625rem #383838;
+    background-color: rgb(245, 245, 245);
+    color: #383838;
+    transition: 0.5s;
 }
 
 /* product page grid */
